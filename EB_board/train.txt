@@ -1,0 +1,2 @@
+# for setup the pytesseract refer this like - https://www.youtube.com/watch?v=HNCypVfeTdw&t=149s
+# for set up the webdriver refer this like - https://www.youtube.com/watch?v=jglQpvPI58A
