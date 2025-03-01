@@ -19,8 +19,8 @@ prefs = {"download.default_directory": os.path.abspath(FOLDER_NAME),
          "safebrowsing.enabled": True}
 chrome_options.add_experimental_option("prefs", prefs)
 
-consumer_numbers = ["115109835349"]  # we can store the multiple consumer number in list
-
+consumer_numbers = ["139110139153"]  
+# ,"129109018673","131310369327","125409009175","145108136878","402148468"
 driver = webdriver.Chrome(options=chrome_options)
 
 def process_consumer(consumer_number):
@@ -34,7 +34,7 @@ def process_consumer(consumer_number):
     submit_button.click()
     
     try:
-        view_button = driver.find_element(By.ID, "MainContent_lnkView1")
+        view_button = driver.find_element(By.ID, "MainContent_GVBillDetails_lnkView_0") # we can change this because website structure is change in ID we put "MainContent_GVBillDetails_lnkView_0" 
         view_button.click()
         time.sleep(5)  
         
